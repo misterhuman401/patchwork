@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome to my website!!!!! :)</title>
+        <title>story</title>
   	<link rel="icon" type="image/x-icon" href="/favicon">
   	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -11,16 +11,30 @@
     <body>
     <style>
         body {
-            background-color: oklch(0.4893 0.2153 4.59);
+            background-color: green;
         }
     </style>
-        <div style="font-size: 50pt; color: oklch(0.7429 0.1426 86.4);">
-            <p>Welcome, 192.95.117.95!</p>
+	<a href="/">Leave</a>
+        <div style="font-size: 25pt; color: black">
+            <p>Welcome to the never ending story!</p>
         </div>
-        <div style="font-size: 15pt; color: oklch(0.7429 0.1426 86.4);">
-            <p>So... Hello, I'm [human_name]! This is my website.</p>
-            <p>I have a <a href="/pool">pool</a>. The water is cool. I have some friends that like to hang out there.<p>
-            <p>I have a <a href="/story">story</a>. There's a guy named Rory! I'm sure my story is not very snore-worthy!!! (pretend that rhymes)</p>
+        <form method="POST" action="/story/add_word">
+            <input type="text" name="word" placeholder="Add a word or phrase" autocapitalize="off">
+            <button type="submit">Send</button>
+        </form>
+        <form method="POST" action="/story/enter">
+            <button type="submit">New Line</button>
+        </form>
+        <form method="POST" action="/story/delete">
+            <button type="submit">Delete Character</button>
+        </form>
+        <div style="font-size: 10pt; color: black">
+            <pre>&#34;Rory was a!PLATYPUS. He liked to eat pie.
+&#34;What are you doing, Rory?&#34; Sasked his friend, bubbles.
+Duhhh, Rory thought, I&#39;m eating?!
+“Hello?“ Bubbles asked “U OK?“
+&#34;What?&#34; Rory said, clearly confused &#34;Oh, yeah! I just zoned out.&#34;
+&#34;</pre>
         </div>
     </body>
 </html>
