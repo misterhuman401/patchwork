@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>story</title>
+        <title>choose a pool</title>
   	<link rel="icon" type="image/x-icon" href="/favicon">
   	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,27 +14,23 @@
             background-color: green;
         }
     </style>
-	<a href="/">Leave</a>
+        <a href="/">Leave</a>
         <div style="font-size: 25pt; color: black">
-            <p>Welcome to the never ending story!</p>
+            <p>Welcome to the pool chooser!</p>
         </div>
-        <form method="POST" action="/story/add_word">
-            <input type="text" name="word" placeholder="Add a word or phrase" autocapitalize="off">
-            <button type="submit">Send</button>
-        </form>
-        <form method="POST" action="/story/enter">
-            <button type="submit">New Line</button>
-        </form>
-        <form method="POST" action="/story/delete">
-            <button type="submit">Delete Character</button>
+        <form method="POST" action="/choose_pool">
+            <input type="text" name="pool" placeholder="adult" autocapitalize="off">
+            <button type="submit">Go</button>
         </form>
         <div style="font-size: 10pt; color: black">
-            <pre>&#34;Rory was a!PLATYPUS. He liked to eat pie.
-&#34;What are you doing, Rory?&#34; Sasked his friend, bubbles.
-Duhhh, Rory thought, I&#39;m eating?!
-“Hello?“ Bubbles asked “U OK?“
-&#34;What?&#34; Rory said, clearly confused &#34;Oh, yeah! I just zoned out.&#34;
-&#34;</pre>
+            <pre>Fun Facts!
+I am your only ruler
+You obey me
+I am supreme
+HEHEHEHEHEHE
+Bill Cipher is my homie
+</pre>
+            <p>There are 1 active pools, which are: Arduino</p>
         </div>
     </body>
 </html>
